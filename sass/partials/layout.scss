@@ -8,50 +8,30 @@ $column-width   : 4em;            // each column is 4em wide
 $gutter-width   : 1em;            // 1em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
-@mixin show-border($color: red) {
-  border: 1px solid $color;
-}
-
-body { 
-  @include container;
-}
-
-.page-header,
-.page-section,
-.page-footer {
+.grid-wrapper { 
+    @include container;
     clear: both; //full width
-    overflow:auto;
-    @include show-border;  
+    //overflow:auto;
 }
 
 .page-header {
   h1 {
     @include span-columns(6,12);
-    @include show-border(blue);
   }
   nav {
     @include span-columns(6 omega, 12);
-    @include show-border(orange);
+    text-align: right;
   }
 }
 
 .layout-grid {
+  padding: 0;
   .grid-item {
-    @include span-columns(4,12);
-    @include nth-omega(3n);
+    @include span-columns(6,12);
+    @include nth-omega(2n);
+    margin-bottom: 1em;
   }
-  .grid-item:nth-child(3n+1) {
+  .grid-item:nth-child(2n+1) {
     clear: left;
   }
-}
-
-.section-about {
-  &> section {
-    @include span-columns(3,12);
-    &:nth-child(4n) {
-      border: 1px solid red;
-    }
-  }
-
-
 }

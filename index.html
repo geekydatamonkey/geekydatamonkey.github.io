@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/shp7xuy.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -21,54 +23,64 @@
     <![endif]-->
 
     <header class="page-header">
-      <h1>James Johnson</h1>
-      <nav>
-          <ul>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-      </nav>
+      <div class="grid-wrapper">
+        <h1>James Johnson</h1>
+        <nav>
+            <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
     </header> <!-- end .page-header -->
     <main>
       <section class="page-section section-work">
-        <h2 id="work">Latest Work</h2>
-        <ul class="layout-grid">
-          <li class="grid-item">
-            <h3><a href="#">ProgStar</a></h3>
-            <p class="project-note">In Development</p>
-            <img src="img/placeholder-400x300.gif" alt="Coming Soon">
-          </li>
-          
-          <li class="grid-item">
-            <h3><a href="http://forecastpublicart.org">Forecast Public Art</a></h3>
-            <a href="http://forecastpublicart.org"><img src="img/thumb-par-800x600.jpg" alt="Screenshot of Forecast Public Art / Public Art Review"></a>
-          </li>
+        <div class="grid-wrapper">
+          <h2 id="work">Latest Work</h2>
+          <ul class="layout-grid">
+            <li class="grid-item">
+              <h3><a href="#">ProgStar Research</a></h3>
+              <figure class="placeholder">
+                <img src="img/placeholder-400x300.gif">
+                <figcaption>In Development</figcaption>
+              </figure>
+            </li>
+            
+            <li class="grid-item">
+              <h3><a href="http://forecastpublicart.org">Forecast Public Art</a></h3>
+              <img src="img/thumb-par-800x600.jpg" alt="Screenshot of Forecast Public Art / Public Art Review">
+            </li>
 
-          <li class="grid-item">
-            <h3><a href="http://osseopaint.com">Osseo Paint</a></h3>
-            <img src="img/thumb-osseopaint-800x600.png" alt="Screenshot of Osseo Paint and Wallpaper">
-          </li>
+            <li class="grid-item">
+              <h3><a href="http://lizengdesign.com">Li Zeng Design</a></h3>
+              <img src="img/thumb-lizengdesign-800x600.png" alt="Li Zeng Design Website">
+            </li>
 
-          <li class="grid-item">
-            <h3><a href="http://mcad.edu/idm">Web Development 1: HTML and CSS</a></h3>
-            <img src="img/thumb-webdev1-800x600.png" alt="Screenshot of Web Development 1 Course">      
-          </li>
-        </ul>
+            <li class="grid-item">
+              <h3><a href="http://osseopaint.com">Osseo Paint</a></h3>
+              <img src="img/thumb-osseopaint-800x600.png" alt="Screenshot of Osseo Paint and Wallpaper">
+            </li>
 
+          </ul>
+        </div>
       </section> <!-- end .page-section -->
       <section class="page-section section-about">
-        <h2 id="about">About</h2>
-        <img src="img/jamesjohnson-headshot.jpg" alt="Headshot of James">
-        <p><b>James Johnson</b> is currently a teacher, developer, and data-geek for the Minneapolis College of Art and Design. He also does a bit of freelance web development for fun on the side. He loves teaching and learning new things <em>almost</em> as much as he loves pizza. Almost.</p>
+        <div class="grid-wrapper">
+          <h2 id="about">About</h2>
+          <div class="media">
+            <img class="media-object" src="img/jamesjohnson-headshot.jpg" alt="Headshot of James">
+            <div class="media-body">
+              <p><b>James Johnson</b> is currently a teacher, developer, and data-geek for the Minneapolis College of Art and Design. He also does a bit of freelance web development for fun on the side. He loves teaching and learning new things <em>almost</em> as much as he loves pizza. Almost.</p>
+            </div>
+          </div><!-- end .media -->
 
-        <div class="layout-grid">
-        <section class="grid-item">
+        <section>
           <h3>Experience</h3>
           
-          <h4>Freelance Developer</h4>
+          <h4>Web Developer</h4>
           <ul>
-            <li>Hypercubica</li>
+            <li>Freelance</li>
             <li>2010 – Present</li>
           </ul>
 
@@ -101,7 +113,7 @@
           </ul>
         </section>
 
-        <div class="grid-item">
+        <div>
           <section>
             <h3>Education</h3>
 
@@ -124,7 +136,7 @@
             </ul>
           </section>
 
-          <section>
+          <section class="section-skills">
             <h3>Additional Skills</h3>
 
             <h4>Web Development</h4>
@@ -152,7 +164,7 @@
             </ul>
           </section>
       </div> <!-- end .grid-item -->
-        <section class="grid-item">
+        <section class="section-courses">
           <h3>Courses Developed and Taught</h3>
           <h4>Higher Ed</h4>
           <ul>
@@ -178,20 +190,21 @@
             <li>Workshop: Exploring Geometry and Problem Solving</li>
           </ul>
         </section>
+        </div>
       </section> <!-- end .page-section .section-about -->
       <section class="page-section section-contact">
-        <h2 id="contact">Contact</h2>
-        <p>Have an interesting project or opportunity? Just want to say "Hi?" Send me a message!
-        <form>
-          <input name="contact-name" placeholder="Your Name">
-          <input name="contact-email"placeholder="Your Email">
-          <textarea name="contact-message" placeholder="Your Message"></textarea>
-          <button type="submit">Send</button>
-        </form>
+        <div class="grid-wrapper">
+          <h2 id="contact">Contact</h2>
+          <p>Have an interesting project or opportunity? Just want to say "Hi?"
+
+          <p><a href="mailto:johnsojr@gmail.com">johnsojr@gmail.com</a></p>
+        </div>
       </section> <!-- end .page-section .section-contact -->
     </main>
     <footer class="page-footer">
-      <p>&copy; James Johnson</p>
+      <div class="grid-wrapper">
+        &copy; James Johnson
+      </div>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

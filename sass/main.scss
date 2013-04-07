@@ -15,7 +15,8 @@
 //@import "partials/bootstrap-responsive-2.3.1";
 
 ////////////////////////////
-// Global Styles
-
+// Project Styles
+@import "partials/variables";
 @import "partials/global";
 @import "partials/layout";
+@import "partials/typography";

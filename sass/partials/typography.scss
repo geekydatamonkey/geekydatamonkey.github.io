@@ -1,0 +1,55 @@
+//Typography
+
+body {
+  font-family: $body-font-stack;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+
+//Headings
+h1, h2 {
+  font-family: $heading-font-stack;
+  margin: .5em 0;
+}
+h3 {
+  font-family: $subheading-font-stack;
+}
+h4, h5 {
+  font-family: $body-font-stack;
+}
+
+h2,
+h2 a {
+  color: $color-accent;
+}
+h3,
+h3 a {
+  color: $color-darker;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1em;
+}
+
+
+// Links
+a {
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid #333;
+}
+.page-header a {
+  color: #fff;
+}

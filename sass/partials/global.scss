@@ -2,9 +2,94 @@
  * Sitewide style defaults
  */
 
- * {
- 	@include box-sizing(border-box);
- }
- img {
- 	max-width: 100%;
- }
+* {
+  @include box-sizing(border-box);
+}
+
+/////////////////////////
+// General Section Styles
+
+.page-header {
+  background-color: #333;
+  color: #fff;
+}
+.page-section {
+  padding: 2em 0;
+}
+.page-section:nth-child(even) {
+  background-color: $color-darker;
+  color: #999;
+  h3, h3 a,
+  h4, h4 a {
+    color: $color-light;
+  }
+}
+
+////////////////////////
+// Image Styles
+img {
+  max-width: 100%;
+}
+.placeholder {
+  position: relative;
+  figcaption {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    color: #aaa;
+  }
+}
+.media {
+  $media-columns: 3;
+  overflow: auto;
+  .media-object {
+    @include border-radius(50%);
+    border: 4px solid $color-dark;
+    @include span-columns($media-columns);
+  }
+  .media-body {
+    @include span-columns(($total-columns - $media-columns)omega);
+  }
+}
+
+
+///////////////////////////
+// Section Specific Styles
+.section-work {
+  img {
+    border: 1px solid $color-light;
+  }
+}
+
+.section-about {
+  .media-body b { color: $color-light; }
+  section {
+    clear: both;
+    margin-top: 2em;
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    h3 {
+      border-bottom: 4px solid $color-dark;
+    }
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+  .section-skills,
+  .section-courses {
+    li {
+      display: inline;
+    }
+    li:after {
+      content: ', ';
+    }
+    li:last-child:after {
+      content: '';
+    }
+  }
+}
+
