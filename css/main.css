@@ -769,3 +769,70 @@ textarea {
 /* line 8, ../sass/partials/global.scss */
 img {
   max-width: 100%; }
+
+/**
+ * layout.scss
+ * Project Layout
+ */
+/* line 15, ../sass/partials/layout.scss */
+body {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  body:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 21, ../sass/partials/layout.scss */
+.page-header,
+.page-section,
+.page-footer {
+  clear: both;
+  overflow: auto;
+  border: 1px solid red; }
+
+/* line 28, ../sass/partials/layout.scss */
+.page-header h1 {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+  border: 1px solid blue; }
+/* line 32, ../sass/partials/layout.scss */
+.page-header nav {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+  border: 1px solid orange; }
+
+/* line 39, ../sass/partials/layout.scss */
+.layout-grid .grid-item {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline; }
+  /* line 185, ../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.5/sass/susy/_grid.scss */
+  .layout-grid .grid-item:nth-child(3n) {
+    float: right;
+    margin-right: 0; }
+/* line 43, ../sass/partials/layout.scss */
+.layout-grid .grid-item:nth-child(3n+1) {
+  clear: left; }
+
+/* line 49, ../sass/partials/layout.scss */
+.section-about > section {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline; }
+  /* line 51, ../sass/partials/layout.scss */
+  .section-about > section:nth-child(4n) {
+    border: 1px solid red; }
