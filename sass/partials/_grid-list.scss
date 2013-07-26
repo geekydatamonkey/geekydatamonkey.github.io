@@ -1,0 +1,47 @@
+$items-per-row: 2;
+
+.grid-item {
+  @include pie-clearfix;
+  @include span-columns($total-columns/($items-per-row));
+  @include nth-omega($items-per-row + 'n' );
+  margin-bottom: 1em;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $body-font-stack;
+    margin: 1em 0 0 0;
+    font-size: 1.5em;
+    line-height: 1;
+  }
+  img {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  .site-url {
+    display: block;
+    font-size: 1em;
+    text-transform: lowercase;
+    font-family: $condensed-font-stack;
+    font-style: normal;
+    a {
+      color: lighten($color-link, 30%);
+    }
+    a:hover {
+      color: lighten($color-link, 40%);
+    }
+    &:before {
+      //content: '//';
+      color: #ddd;
+    }
+  }
+}
+
+//.grid-item:nth-of-type( $items-per-row + 'n' ){
+//  @include post($total-columns/($items-per-row + 1));
+//}
+
+.grid-list {
+  @include pie-clearfix;
+  padding: 0;
+  &> li {
+    @extend .grid-item;
+  }
+}

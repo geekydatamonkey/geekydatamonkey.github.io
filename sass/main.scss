@@ -11,12 +11,19 @@
 @import "compass/css3";
 @import "susy";
 
-//@import "partials/bootstrap-2.3.1";
-//@import "partials/bootstrap-responsive-2.3.1";
+////////////////////////////
+// Libs
+@import "vendor/font-awesome/font-awesome";
 
 ////////////////////////////
 // Project Styles
 @import "partials/variables";
 @import "partials/global";
 @import "partials/layout";
-@import "partials/typography";
+@import "partials/grid-list";
+@import "partials/page-header";
+@import "partials/page-section";
+@import "partials/page-footer";
+@import "partials/tag-list";
+@import "partials/social-media";
+

@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    James Johnson -- Developer and Designer -- @jimbobalj
 
 # THANKS
 
-    <name>
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
+    Sass, Compass, Susy
     Normalize.css, jQuery, Modernizr
+    Font Awesome, TypeKit
