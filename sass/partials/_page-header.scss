@@ -1,21 +1,19 @@
 .page-header {
   color: $white;
-  hgroup {
-    $header-cols: 2;
-    h1 {
-      @include span-columns($total-columns/$header-cols);
-      font-family: $body-font-stack;
-      font-size: 2em;
-      margin: 0;
-    }
-    h2 {
-      @include span-columns($total-columns/$header-cols omega);
-      margin: 0.5em 0 0 0;
-      font-size: 1.25em;
-      text-align: right;
-      //font-family: $condensed-font-stack;
-      font-weight: normal;
-    }
+  $header-cols: 2;
+  h1 {
+    @include span-columns($total-columns/$header-cols);
+    font-family: $body-font-stack;
+    font-size: 2em;
+    margin: 0;
+  }
+  h2 {
+    @include span-columns($total-columns/$header-cols omega);
+    margin: 0.5em 0 0 0;
+    font-size: 1.25em;
+    text-align: right;
+    //font-family: $condensed-font-stack;
+    font-weight: normal;
   }
 }
 .page-header-wrap {
