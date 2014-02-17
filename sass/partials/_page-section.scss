@@ -24,8 +24,11 @@
     margin-bottom: 0.5em;
     font-family: $body-font-stack;
     font-size: $section-heading-size;
-    @include breakpoint('mobile-tablet') {
+    @include breakpoint('mobile') {
       font-size: 1.5em;
+    }
+    @include breakpoint('tablet') {
+      font-size: 2em;
     }
     color: $color-heading;
     margin-left: -2px; // weird space with font

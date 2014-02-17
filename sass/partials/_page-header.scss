@@ -6,9 +6,12 @@
     @include span-columns($total-columns/$header-cols);
     font-family: $body-font-stack;
     font-size: 3em;
-    @include breakpoint('mobile-tablet'){
+    @include breakpoint('mobile'){
       font-size: 1.5em;
       @include reset-columns;
+    }
+    @include breakpoint('tablet'){
+      font-size: 2em;
     }
     margin: 0;
     line-height: 1;
@@ -21,8 +24,11 @@
       margin: 0;
     }
     font-size: 1.5em;
-    @include breakpoint('mobile-tablet'){
+    @include breakpoint('tablet'){
       font-size: 1em;
+    }
+    @include breakpoint('mobile'){
+      font-size: 0.8em;
     }
     text-align: right;
     font-family: $condensed-font-stack;
