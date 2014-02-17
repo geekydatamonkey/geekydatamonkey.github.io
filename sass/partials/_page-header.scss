@@ -2,18 +2,37 @@
   color: $white;
   $header-cols: 2;
   h1 {
+    @include pie-clearfix;
     @include span-columns($total-columns/$header-cols);
     font-family: $body-font-stack;
-    font-size: 2em;
+    font-size: 3em;
+    @include breakpoint('mobile-tablet'){
+      font-size: 1.5em;
+      @include reset-columns;
+    }
     margin: 0;
+    line-height: 1;
   }
-  h2 {
+  .subtitle {
+    @include pie-clearfix;
     @include span-columns($total-columns/$header-cols omega);
     margin: 0.5em 0 0 0;
-    font-size: 1.25em;
+    @include breakpoint('mobile-tablet'){
+      margin: 0;
+    }
+    font-size: 1.5em;
+    @include breakpoint('mobile-tablet'){
+      font-size: 1em;
+    }
     text-align: right;
-    //font-family: $condensed-font-stack;
+    font-family: $condensed-font-stack;
     font-weight: normal;
+    color: #999;
+    @include breakpoint('mobile-tablet') {
+      clear:both;
+      @include reset-columns;
+      text-align: left;
+    }
   }
 }
 .page-header-wrap {
