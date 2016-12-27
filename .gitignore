@@ -3,3 +3,4 @@
 .DS_Store
 *.debug
 node_modules
+*.log
