@@ -1,0 +1,18 @@
+{
+  "name": "james.mn-2017",
+  "version": "1.0.0",
+  "description": "> http://james.mn",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+     "start": "browser-sync start --server --files \"css/*.css,*.html\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Johnson <johnsojr@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.5"
+  }
+}
