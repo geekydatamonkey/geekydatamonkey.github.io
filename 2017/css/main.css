@@ -388,9 +388,6 @@ small.img-credit a {
 /** RESPONSIVE STUFF **/
 
 @media (max-width: 36em) {
-  body {
-    border: 1px solid red;
-  }
   .section-wrap {
     padding: 2em;
   }
