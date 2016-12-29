@@ -18,6 +18,8 @@ $ npm start
 
 ## Deploying
 
+just push master to origin
+
 ```
-$ npm run deploy
+$ git push origin master
 ```

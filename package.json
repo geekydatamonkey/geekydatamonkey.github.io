@@ -7,8 +7,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "browser-sync start --server src --files src",
-    "deploy": "gh-pages -d src",
+    "start": "browser-sync start --server --files .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "James Johnson <johnsojr@gmail.com>",
