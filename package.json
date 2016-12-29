@@ -7,7 +7,7 @@
     "doc": "doc"
   },
   "scripts": {
-    "start": "browser-sync start --server --files \"src/css/*.css,src/*.html,src/js/*.js\"",
+    "start": "browser-sync start --server src --files src",
     "deploy": "gh-pages -d src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
