@@ -7,12 +7,14 @@
     "doc": "doc"
   },
   "scripts": {
-     "start": "browser-sync start --server --files \"css/*.css,*.html,js/*.js\"",
+    "start": "browser-sync start --server --files \"src/css/*.css,src/*.html,src/js/*.js\"",
+    "deploy": "gh-pages -d src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "James Johnson <johnsojr@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.5"
+    "browser-sync": "^2.18.5",
+    "gh-pages": "^0.12.0"
   }
 }

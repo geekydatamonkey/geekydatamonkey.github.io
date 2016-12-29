@@ -1,4 +1,0 @@
-README
-======
-
-Documentation is good.
