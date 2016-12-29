@@ -100,7 +100,7 @@ textarea {
   --font-sans-serif: 'proxima-nova-alt', sans-serif;
   --font-serif: 'bodoni-urw', Georgia, serif;
 
-  --color-blog-end: hsla(44, 45%, 40%, 0.75);
+  --color-blog-end: hsla(242, 42%, 46%, 0.75);
 
   --color-blog-bg: -webkit-linear-gradient(hsla(332, 65%, 40%, 0.75), var(--color-blog-end));
   --color-blog-bg: -o-linear-gradient(hsla(332, 65%, 40%, 0.75), var(--color-blog-end));
@@ -228,8 +228,9 @@ small.img-credit a {
   font-size: 0.9rem;
   font-family: var(--font-sans-serif);
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.33em;
   text-align: center;
+  line-height: 1.2;
 }
 
 /* .project */
@@ -247,7 +248,7 @@ small.img-credit a {
   float: left;
   margin-left: 2%;
 }
-.project img,
+.project-image,
 .section-image {
   display: block;
   width: 33.3333%;
@@ -376,6 +377,44 @@ small.img-credit a {
 .social-media a:hover {
   color: #333;
 }
+
+/** RESPONSIVE STUFF **/
+
+@media (max-width: 36em) {
+  body {
+    border: 1px solid red;
+  }
+  .section-wrap {
+    padding: 2em;
+  }
+  .project-image,
+  .section-image {
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+  }
+  .project {
+    padding: 0;
+    margin-bottom: 2em;
+  }
+  .project-summary,
+  .section-content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .project-blurb {
+    margin-top: 0.5em;
+  }
+  .project-title:after {
+    display: none;
+  }
+  .hero-section h1 {
+    font-size: 3em;
+  }
+}
+
 
 /* ==========================================================================
   Helper classes
