@@ -231,6 +231,7 @@ small.img-credit a {
   letter-spacing: 0.33em;
   text-align: center;
   line-height: 1.2;
+  margin-bottom: 2em;
 }
 
 /* .project */
@@ -298,11 +299,44 @@ small.img-credit a {
   position: relative;
   z-index: 10;
 }
-.section-experiments .project:hover {
+.page-section:nth-of-type(1) .project:hover {
   background: hsla(0,0%,75%,0.5);
 }
-.section-projects {
+.page-section:nth-of-type(2) {
   background: linear-gradient(hsla(10,90%,90%,1),hsla(100,90%,90%,1));
+}
+.page-section:nth-of-type(2) .section-heading {
+  margin-bottom: 4em;
+}
+.page-section:nth-of-type(2) .project {
+  width: 49%;
+  float: left;
+  margin: 0 0 2% 0;
+  padding: 0;
+}
+.page-section:nth-of-type(2) .project .project-image {
+  width: auto;
+  float: none;
+}
+.page-section:nth-of-type(2) .project .project-summary {
+  width: auto;
+  float: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  z-index: -10;
+}
+.page-section:nth-of-type(2) .project:hover .project-summary {
+  z-index: 10;
+  background-color: hsla(0,100%,100%,0.9);
+  width: 100%;
+  height: 100%;
+}
+.page-section:nth-of-type(2) a:nth-of-type(2n+1) .project {
+  clear: left;
+  margin-right: 2%;
 }
 
 /* .section-blog */
@@ -416,6 +450,12 @@ small.img-credit a {
   }
   .hero-section h1 {
     font-size: 3em;
+  }
+  .page-section:nth-of-type(2) .project-summary {
+    display: none;
+  }
+  .page-section:nth-of-type(2) .project:hover {
+    background: none;
   }
 }
 
